@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d0c0458cd7bf0aa562d0e4f09f6d9d59",
+    "content-hash": "ff9ccec5eb04302880559656abde8a15",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -3808,6 +3808,62 @@
             "time": "2020-08-17T07:42:30+00:00"
         },
         {
+            "name": "teampickr/php-google-maps-distance-matrix",
+            "version": "0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/teampickr/php-google-maps-distance-matrix.git",
+                "reference": "ca7e4984df1f37d6384496f8ee3ecfb00b5b8f48"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/teampickr/php-google-maps-distance-matrix/zipball/ca7e4984df1f37d6384496f8ee3ecfb00b5b8f48",
+                "reference": "ca7e4984df1f37d6384496f8ee3ecfb00b5b8f48",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "^6.3",
+                "php": ">7.0"
+            },
+            "require-dev": {
+                "illuminate/support": ">5.4",
+                "phpunit/phpunit": "6.0",
+                "vlucas/phpdotenv": "^2.4"
+            },
+            "suggest": {
+                "illuminate/support": "Allows you to use this package from within Laravel"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "TeamPickr\\DistanceMatrix\\Frameworks\\Laravel\\DistanceMatrixServiceProvider"
+                    ],
+                    "aliases": {
+                        "DistanceMatrix": "TeamPickr\\DistanceMatrix\\Frameworks\\Laravel\\DistanceMatrix"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "TeamPickr\\DistanceMatrix\\": "src/",
+                    "TeamPickr\\DistanceMatrix\\Tests\\": "tests/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jonathan Martin",
+                    "email": "jm@pickr.works"
+                }
+            ],
+            "description": "PHP Implementation of the Google Maps Distance Matrix API",
+            "time": "2019-12-12T12:25:40+00:00"
+        },
+        {
             "name": "tijsverkoyen/css-to-inline-styles",
             "version": "2.2.3",
             "source": {
@@ -5973,5 +6029,6 @@
     "platform": {
         "php": "^7.2.5"
     },
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "1.1.0"
 }
